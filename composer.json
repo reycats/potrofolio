@@ -1,0 +1,18 @@
+{
+    "name": "xt4/portfolio",
+    "description": "XT4 Personal Branding & Blog Portfolio",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "files": [
+            "includes/helpers.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
