@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xt4.my.id/sitemap.xml
