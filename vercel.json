@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "api/php.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/index.php" },
+    { "source": "/post/(.*)", "destination": "/post.php?slug=$1" },
+    { "source": "/admin", "destination": "/admin/login.php" },
+    { "source": "/admin/login", "destination": "/admin/login.php" },
+    { "source": "/admin/dashboard", "destination": "/admin/dashboard.php" },
+    { "source": "/admin/editor", "destination": "/admin/editor.php" },
+    { "source": "/admin/upload-handler", "destination": "/admin/upload_handler.php" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.php" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/(.*)", "destination": "/api/php.php" }
+  ],
+  "redirects": [
+    { "source": "/admin/", "destination": "/admin/login", "permanent": true }
+  ]
+}
